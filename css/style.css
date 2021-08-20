@@ -1,0 +1,267 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Segoe UI symbol', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background-color: white !important;
+}
+.nav-link {
+  font-weight: bold;
+  font-size: .7rem;
+  color: black !important;
+}
+.nav-item {
+  padding: 20px;
+  text-align: center;
+}
+.nav-link:hover {
+  color: rgb(0, 102, 255) !important;
+}
+
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+}
+.pageHeading {
+  padding-left: 30px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: black !important;
+}
+
+.picBanner{
+    height: 500px;
+    width: 100%;
+}
+.slider {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .carousel-item {
+    max-height: 450px;
+  }
+  .carousel-caption {
+    margin-bottom: 11%;
+  }
+  .carousel-caption > h1 {
+    font-size: 4rem;
+  }
+  .carousel-caption > h3 {
+    font-size: 2rem;
+  }
+  
+  .contact_container {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgba(15,15,15,255);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .contact > p {
+    text-transform: uppercase;
+    color: rgba(121,165,182,255);
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .contact_container .col-md-4 {
+    width: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .service_container .col-md-4 {
+    width: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cardCircle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #06acf3;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1px;
+  }
+  
+  .service_container {
+    background-color: #f2f2f2;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .service_container .card-body {
+    min-height: 225px;
+    position: relative;
+    padding: 30px 15px 15px 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+  .service_container .card-title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .service_container .card-text {
+    max-width: 200px;
+    color: #8f8f8f;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutus_container {
+    padding: 0 8rem 3rem 8rem;
+    background-color: #55bce7;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutus_container .col-md-4 {
+    width: auto;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutus_container .card {
+    width: 18rem;
+    text-align: center;
+    background-color: transparent;
+    border-color: #e4ffff;
+    border-width: 3px;
+  }
+  .aboutus_container .card-title {
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: white;
+  }
+  .aboutus_container .card-text {
+    max-width: 20rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    color: white;
+  }
+  .aboutus_container img {
+    width: 100%;
+  }
+  .aboutus_container .card-body {
+    min-height: 16.4rem;
+    padding: 30px 15px 15px 15px;
+  }
+  
+  .our_text {
+    margin-top: 5rem;
+    color: #7a7a7a;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .blog_post_heading {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+  .blog_post_container {
+    padding: 0 5rem 3rem 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .blog_post_container .col-md-4{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .blog_post_container .card{
+    min-width: 19rem;
+  }
+  .blog_post_container .card-body {
+    min-height: 225px;
+    padding: 30px 15px 15px 15px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+  .blog_post_container .card-title {
+    padding: 15px 0 7px 0;
+    text-align: center;
+  }
+  .blog_post_container .card-text {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #9d9d9d;
+  }
+  .blog_post_card_icon{
+    width: 20px;
+    height: 20px;
+  }
+  .icon_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icon_container p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .blog_post_container .col-sm{
+    padding: 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  footer {
+    padding: 3rem 0 2.5rem 0;
+    background-color: #1f232c;
+  }
+  footer p {
+    color: white;
+    text-align: center;
+  }
+  .black {
+    
+    float: left;
+    
+  }
+  .nav-item {
+    text-align: center;
+  }
+
+  .pageHeading {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: black !important;
+  }
+  .headText{
+    text-size-adjust: 25;
+  }
