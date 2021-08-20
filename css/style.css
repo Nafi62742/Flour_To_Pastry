@@ -31,17 +31,14 @@ body{
   color: black !important;
 }
 
-.picBanner{
-    height: 500px;
-    width: 100%;
-}
+
 .slider {
     position: relative;
     text-align: center;
     color: white;
   }
   .carousel-item {
-    max-height: 450px;
+    max-height: auto;
   }
   .carousel-caption {
     margin-bottom: 11%;
