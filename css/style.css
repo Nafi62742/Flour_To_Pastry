@@ -38,7 +38,7 @@ body{
     color: white;
   }
   .carousel-item {
-    max-height: auto;
+    max-height: 750px;
   }
   .carousel-caption {
     margin-bottom: 11%;
