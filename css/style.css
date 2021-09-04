@@ -3,19 +3,31 @@ body{
     font-family: 'Segoe UI symbol', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar {
-  background-color: white !important;
+  background-color: #f56056 !important;
 }
-.nav-link {
+.nav-link{
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: .7rem;
   color: black !important;
 }
-.nav-item {
+.nav-item{
   padding: 20px;
   text-align: center;
 }
 .nav-link:hover {
   color: rgb(0, 102, 255) !important;
+}
+.nav-logo{
+  align-self: left;
+  max-width: 25px;
+}
+.nav-logo img{
+  max-width: 250px;
+  height: auto;
+}
+.navbar-brand{
+  
+  align-self: left;
 }
 
 @media screen and (min-width: 992px) {
@@ -31,15 +43,18 @@ body{
   color: black !important;
 }
 
-
-.slider {
+.picBanner{
+    height: 500px;
+    width: 100%;
+}
+/* .slider {
     position: relative;
     text-align: center;
     color: white;
-  }
-  .carousel-item {
-    max-height: 750px;
-  }
+  } */
+  /* .carousel-item {
+    max-height: 450px;
+  } */
   .carousel-caption {
     margin-bottom: 11%;
   }
@@ -49,14 +64,14 @@ body{
   .carousel-caption > h3 {
     font-size: 2rem;
   }
-  
+/*   
   .contact_container {
     margin-left: 0;
     margin-right: 0;
     background-color: rgba(15,15,15,255);
     display: flex;
     justify-content: center;
-  }
+  } */
   
   .contact > a {
     text-decoration: none;
@@ -262,3 +277,74 @@ body{
   .headText{
     text-size-adjust: 25;
   }
+
+  .content{
+    
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content .textBox{
+    position: relative;
+    max-width: 600px;
+  }
+  .content .textBox h2{
+    padding-left: 30px;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+  
+  } 
+  .content .textBox a{
+    margin-left: 30px;
+   display: inline-block;
+   margin-top: 20px;
+   padding: 8px 20px;
+   background: chocolate;
+   color:cornsilk;
+   border-radius: 40px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-decoration: none;
+  }
+  .content .imgBox{
+    width: 50%;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+   }
+   .content .imgBox img{
+    max-width: 540px;
+   }
+   .thumb{
+     position: absolute;
+     left: 50%;
+     bottom: 20px;
+     transform: translateX(-50%);
+     display: flex;
+   }
+   .thumb li{
+     list-style: none;
+     display: inline-block;
+     margin: 0 20px;
+     cursor: pointer;
+     transition: 0.5s;
+   }
+   .thumb li:hover{
+     transform: translateY(-15px);
+   }
+   .thumb li img{
+     max-width: 60px;
+   }
+   .circle{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: darkgreen;
+     clip-path: circle(700px at right 800px);
+   }
