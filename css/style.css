@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
+
 {
   margin:0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 section
 {
     position: relative;
@@ -259,3 +263,38 @@ header ul li a
         border-bottom-left-radius: 5px;
     }
 }
+.container-fluid {
+    background-color: rgb(238, 209, 209);
+  }
+.navbar {
+    background-color: #f56056 !important;
+  }
+  .nav-link{
+    font-weight: bold;
+    font-size: 1rem;
+    color: black !important;
+  }
+  .nav-item{
+    padding: 20px;
+    text-align: center;
+  }
+  .nav-link:hover {
+    color: rgb(0, 102, 255) !important;
+  }
+  .nav-logo{
+    align-self: left;
+    max-width: 25px;
+  }
+  .nav-logo img{
+    max-width: 250px;
+    height: auto;
+  }
+  .navbar-brand page-heading{
+    
+    align-self: left;
+  }
+  @media screen and (min-width: 992px) {
+    .container-fluid {
+      flex-direction: column;
+    }
+  }
