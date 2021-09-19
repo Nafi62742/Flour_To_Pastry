@@ -149,16 +149,24 @@ header ul li a
     border: 1px solid #ff2377;
     background: linear-gradient(
       235deg,
-      rgba(231, 111, 169, 0.741) 30%,
-      rgba(165, 77, 124, 0.763) 67%
+      rgba(199, 45, 104, 0.741) 30%,
+      rgba(143, 0, 48, 0.763) 67%
     );
   }
   
+  .menus:hover .text .one-half h3{
+    color: #ffffff; 
+  }
+  
+  .menus:hover .text .one-half p {
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+  }
   .menus:hover .text .one-forth .price {
     color: #ffffff;
     border-bottom: 2px solid #ffffff;
   }
   
   .menus:hover .text p {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
   }
