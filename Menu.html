@@ -2,7 +2,7 @@
 <html>
     
     <title>Flour To Pastry</title>
-
+    <section>
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -10,43 +10,188 @@
 
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/menu.css" />
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand page-heading" href="Home.html">Flour To Pastry</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="Home.html">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Orders.html">Orders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Services.html">Our Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contacts.html">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="About.html">About</a>
-              </li>
+      <header>
+            <a href="#" class="logo"><img src = "images/logo.png"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Orders.html">Order</a></li>
+                <li><a href="About.html">About us</a></li>
             </ul>
-          </div>
+        </header>
+    
+
+
+    
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Specialities</span>
+                    <h2 class="mb-4">Our Menu</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Cakes</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Strawberry</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Chocolate Cake</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹399</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Red Valvet</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹500</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Wedding Cake</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Pineapple</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹450</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Belgium Cake</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Cookies</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Pastries</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Blackberries</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Orange</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/twitter.png);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Mango</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-          <footer>
-            <p>&copy; Copyright 2021. All Rights Reserved</p>
-          </footer>
+    
+</section>
+
+         
         
           <script src="js/bootstrap.bundle.min.js"></script>
             </body>

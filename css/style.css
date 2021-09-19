@@ -163,6 +163,11 @@ header ul li a
     background: #eb7495;
     clip-path: circle(600px at right 800px);
 }
+
+
+
+
+
 @media (max-width: 991px)
 {
     header
