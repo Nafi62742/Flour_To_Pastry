@@ -7,20 +7,26 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+
 html {
     scroll-behavior: smooth;
   }
-section
+section 
 {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
+  position: relative;
+  width: 100%;
 }
+.sectionAll{
+  
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
 header
 {
     position: absolute;
@@ -170,3 +176,182 @@ header ul li a
   .menus:hover .text p {
     color: rgba(255, 255, 255, 0.8);
   }
+
+
+.container{
+  margin-top: 15%;
+  
+}
+.img-text{
+  width: 100%;
+  height: 300px;
+  display: block;
+  text-align: center;
+  padding: 40% 5%;
+  background: #81001c;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.img-text:hover{
+  background: linear-gradient(
+    235deg,
+    rgba(199, 45, 104, 0.741) 30%,
+    rgba(143, 0, 48, 0.763) 67%
+  );
+}
+
+.img-text h2{
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.img-text p{
+  font-size: 14px;
+}
+.single-box{
+  position: relative;
+  margin-bottom: 30px;
+  margin: 10%;
+}
+.img-area{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  top: 15px;
+  left: 125px;
+  
+  border-radius: 50%;
+}
+.img-area img{
+  width: 100%;
+}
+
+.carousel-indicators{
+  left: 0;
+  top: auto;
+  bottom: -10px;
+}
+
+.circle
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;   
+    background: #81001c;
+    clip-path: ellipse(110px 45px at bottom);
+    
+}
+
+
+
+
+  @media (max-width: 991px)
+{
+    header
+    {
+        padding: 20px;
+    }
+    header .logo
+    {
+        max-width: 60px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 20px;
+        background: url(close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+    header ul.navigation.active
+    {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       background: #fff;
+       z-index: 10; 
+    }
+    header ul li a 
+    {
+       font-size: 1.5em; 
+       margin: 5px 0;
+    }
+    header ul 
+    {
+        display: none;
+    }
+    section
+    {
+        padding: 20px 20px 120px;
+    }
+    .content
+    {
+      flex-direction: column;
+      margin-top: 100px;  
+    }
+    .content .textBox h2 
+    {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .content .textBox
+    {
+        max-width: 100%;
+    }
+    .content .imgBox
+    {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .content .imgBox img 
+    {
+        max-width: 300px;
+    }
+    .thumb li img 
+    {
+        max-width: 40px;
+    }
+    .circle
+    {
+        clip-path: circle(400px at center bottom);
+    }
+    .sci
+    {
+        background: #eb7495;
+        right: 0;
+        width: 50px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+  }
+
+  header ul.navigation li.hov:hover{
+    font-size: 20px;
+      
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/user.css" />
+
+    <title>Submit Form</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li class="hov"><a href="Home.html">Home</a></li>
+            <li class="hov"><a href="Menu.html">Menu</a></li>
+            <li class="hov"><a href="Orders.html">Order</a></li>
+            <li class="hov"><a href="About.html">About us</a></li>
+        </ul>
+    </header>
+    <div class="regiclas">
+        <div class="container">
+            <div class="card panel-primary">
+                <div class="card-heading">
+                    <a>Registration Form</a>
+                </div>
+                <div class="card-body">
+                    <form action="Connect.php" method="POST">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pNumber">Phone Number</label>
+                            <input type="text" class="form-control" id="pNumber" name="pNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <div class="form-group buton">
+                            <input type="submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-right">
+                    <a>Baaal shesh korsi to</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+
+    </script>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</html>

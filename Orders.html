@@ -18,10 +18,10 @@
             <a href="#" class="logo"><img src = "images/logo.png"></a>
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="Orders.html">Order</a></li>
-                <li><a href="About.html">About us</a></li>
+                <li class="hov"><a href="Home.html">Home</a></li>
+                <li class="hov"><a href="Menu.html">Menu</a></li>
+                <li class="hov"><a href="Orders.html">Order</a></li>
+                <li class="hov"><a href="About.html">About us</a></li>
             </ul>
         </header>
 
@@ -129,5 +129,17 @@
           </footer>
         
           <script src="js/bootstrap.bundle.min.js"></script>
+
+          <script type="text/javascript">
+
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var navigation = document.querySelector('.navigation')
+                menuToggle.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        
+        
+        </script>
             </body>
         </html>
