@@ -270,7 +270,11 @@ header ul li a
 }
 
 header ul.navigation li.hov:hover{
+<<<<<<< Updated upstream
     font-size: 20px;
     
     
+=======
+    font-size: 20px;   
+>>>>>>> Stashed changes
 }

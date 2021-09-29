@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+section
+{
+    position: relative;
+    width: 100%;
+    
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: #fff;
+}
+
+.container{
+    margin-top: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+    box-shadow: -2px 0px 33px 0px rgba(143, 82, 82, 0.75);
+    border-radius: 15px;
+    background-color: #81001c;
+}
+
+
+.cover{
+    grid-area: cover;
+    height: auto;
+    background-image:url('Nafi.jpg') ;
+    background-size: cover;
+    background-position:center center;
+    border-radius: 15px;
+    
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.content-body{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+}
+
+
+
+.black-label{
+    width: 80%;
+    color: cornsilk;
+}
+
+.black-label p{
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    width: 70%;
+}
+
+.title{
+    font-size: 64px;
+}
+
+.prix{
+    margin: 50px 0px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid rgb(255,177,33);
+}
+
+.prix span{
+    padding-left: 10px;
+}
+
+.crt{
+    color: rgb(255, 255, 255);
+    left: 2px;
+    border-bottom:1px solid rgb(177,177,177);
+}
+
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 20px;
+    }
+    header .logo
+    {
+        max-width: 60px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 20px;
+        background: url(close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+    header ul.navigation.active
+    {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       background: #fff;
+       z-index: 10; 
+    }
+    header ul li a 
+    {
+       font-size: 1.5em; 
+       margin: 8px 0;
+    }
+    header ul 
+    {
+        display: none;
+    }
+    section
+    {
+        padding: 20px 20px 120px;
+    }
+    
+    
+}
+header ul.navigation li.hov:hover{
+    font-size: 20px;   
+}
