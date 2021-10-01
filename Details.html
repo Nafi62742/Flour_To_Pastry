@@ -14,26 +14,64 @@
 </head>
 
 <body>
-    
-        <header>
-            <a href="#" class="logo"><img src="images/logo.png"></a>
-            <div class="toggle" onclick="toggleMenu();"></div>
-            <ul class="navigation">
-                <li class="hov"><a href="Home.html">Home</a></li>
-                <li class="hov"><a href="Menu.html">Menu</a></li>
-                <li class="hov"><a href="Orders.html">Order</a></li>
-                <li class="hov"><a href="About.html">About us</a></li>
-            </ul>
-        </header>
-    
-    
-    
-        <div class="container">
-            <div class="cover"></div>
+
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li class="hov"><a href="Home.html">Home</a></li>
+            <li class="hov"><a href="Menu.html">Menu</a></li>
+            <li class="hov"><a href="Orders.html">Order</a></li>
+            <li class="hov"><a href="About.html">About us</a></li>
+        </ul>
+    </header>
+
+
+
+
+    <div class="container">
+    <div class="card mb-3 contuner">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="css/Nafi.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">BE quiet</h5><br>
+              <p class="card-text">UMG (on behalf of Virgin); LatinAutor, BMI - Broadcast Music Inc., LatinAutor - UMPG, Warner
+                Chappell, CMRRA,
+                UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, UMPG Publishing, LatinAutorPerf, and 11 Music
+                Rights
+                Societies</p>
+
+                <p class="card-text">UMG (on behalf of Virgin); LatinAutor, BMI - Broadcast Music Inc., LatinAutor - UMPG, Warner
+                    Chappell, CMRRA,
+                    UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, UMPG Publishing, LatinAutorPerf, and 11 Music
+                    Rights
+                    Societies</p>
+
+              <div class="prix">
+                <span><b>$0.61200</b></span>
+                <span class="crt">Add to card</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="cover"><img src="css/Nafi.jpg" alt="" width="50%"></div>
+
             <div class="content">
-        
+
                 <div class="content-body">
-                    
+
                     <div class="black-label">
                         <span class="title"><b>Boka Napl</b></span>
                         <p>UMG (on behalf of Virgin); LatinAutor, BMI - Broadcast Music Inc., LatinAutor - UMPG, Warner
@@ -48,21 +86,29 @@
                             Rights
                             Societie
                         </p>
-                        <div class="prix">
-                            <span><b>$0.61200</b></span>
-                            <span class="crt">Add to card</span>
-                        </div>
+                       
                     </div>
 
                 </div>
 
             </div>
         </div>
-    
+    </div> -->
+
 
 </body>
 
+<script type="text/javascript">
 
+    function toggleMenu() {
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+
+
+</script>
 
 
 

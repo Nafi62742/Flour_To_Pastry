@@ -9,13 +9,14 @@
 }
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
   }
 section
 {
     position: relative;
     width: 100%;
     
-    padding: 100px;
+    padding: 10.0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +28,7 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 2.0rem 10.0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +36,7 @@ header
 header .logo
 {
     position: relative;
-    max-width: 80px;
+    max-width: 8.0rem;
 }
 header ul
 {
@@ -51,7 +52,7 @@ header ul li a
     display: inline-block;
     color: #333;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 4.0rem;
     text-decoration: none;
 }
 
@@ -63,75 +64,57 @@ body{
 }
 
 .container{
-    margin-top: 10%;
+    margin-top: 13%;
     width: 80%;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "cover content";
-    box-shadow: -2px 0px 33px 0px rgba(143, 82, 82, 0.75);
-    border-radius: 15px;
+    box-shadow: -.2rem 0rem 3.3rem 0rem rgba(143, 82, 82, 0.75);
+    border-radius: 1.5rem;
+    background-color: #81001c;
+    color: #fff;
+}
+.contuner{
     background-color: #81001c;
 }
 
+.card-title{
+    font-size: 4rem;
+}
+.card-text{
+    font-size: 1.2rem;
+}
 
-.cover{
+/* .cover{
     grid-area: cover;
     height: auto;
     background-image:url('Nafi.jpg') ;
     background-size: cover;
     background-position:center center;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     
-}
-
-.content{
-    grid-area: content;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
-    justify-content: center;
-}
-
-.content-body{
-    display: flex;
-    flex-direction: row;
-    padding: 10%;
-}
+} */
 
 
 
-.black-label{
-    width: 80%;
-    color: cornsilk;
-}
 
-.black-label p{
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    width: 70%;
-}
 
-.title{
-    font-size: 64px;
-}
+
 
 .prix{
-    margin: 50px 0px;
+    margin: 5.0rem 0rem;
     width: 45%;
     display: flex;
     justify-content: space-between;
-    border-left: 4px solid rgb(255,177,33);
+    border-left: .4rem solid rgb(255,177,33);
 }
 
 .prix span{
-    padding-left: 10px;
+    padding-left: 1.0rem;
 }
 
 .crt{
     color: rgb(255, 255, 255);
-    left: 2px;
-    border-bottom:1px solid rgb(177,177,177);
+    left: .2rem;
+    border-bottom:.1rem solid rgb(177,177,177);
 }
 
 
@@ -148,20 +131,20 @@ main{
 {
     header
     {
-        padding: 20px;
+        padding: 2.0rem;
     }
     header .logo
     {
-        max-width: 60px;
+        max-width: 6.0rem;
     }
     .toggle
     {
         position: relative;
-        width: 30px;
-        height: 30px;
+        width: 3.0rem;
+        height: 3.0rem;
         cursor: pointer;
         background: url(menu.png);
-        background-size: 30px;
+        background-size: 3.0rem;
         background-position: center;
         background-repeat: no-repeat;
         filter: invert(1);
@@ -170,9 +153,9 @@ main{
     .toggle.active
     {
         position: fixed;
-        right: 20px;
+        right: 2.0rem;
         background: url(close.png);
-        background-size: 25px;
+        background-size: 2.5rem;
         background-position: center;
         background-repeat: no-repeat;
         filter: invert(1);
@@ -194,7 +177,7 @@ main{
     header ul li a 
     {
        font-size: 1.5em; 
-       margin: 8px 0;
+       margin: .8rem 0;
     }
     header ul 
     {
@@ -202,11 +185,55 @@ main{
     }
     section
     {
-        padding: 20px 20px 120px;
+        padding: 2.0rem 2.0rem 12.0rem;
+    }
+    html{
+        font-size: 45%;
+    }
+    .container{
+        margin-top: 20%;
+       
+    }
+
+    
+    
+   
+}
+
+@media (max-width: 768px)
+{
+    html{
+        font-size: 35%;
+    }
+    .container{
+        margin-top: 25%;
+       
     }
     
-    
 }
+
+@media (max-width: 500px)
+{
+    html{
+        font-size: 35%;
+    }
+    .container{
+        margin-top: 30%;
+       
+    }
+
+}
+ @media (max-width: 400px)
+{
+    html{
+        font-size: 25%;
+    }
+    .container{
+        margin-top: 35%;
+       
+    }
+    
+} 
 header ul.navigation li.hov:hover{
-    font-size: 20px;   
+    font-size: 2.0rem;   
 }
