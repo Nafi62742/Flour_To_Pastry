@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<title>Flour To Pastry</title>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/profile.css" />
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li class="hov"><a href="Home.html">Home</a></li>
+            <li class="hov"><a href="Menu.html">Menu</a></li>
+            <li class="hov"><a href="Orders.html">Order</a></li>
+            <li class="hov"><a href="About.html">About us</a></li>
+        </ul>
+    </header>
+
+
+
+
+    <div class="container">
+    <div class="card mb-3 contuner">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="css/Nafi.jpg" class="img-fluid rounded-start" alt="Image not added">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-name">BE quiet</h5><br>
+              <p class="card-textP">Email:</p>
+
+                <p class="card-textP">Phone No:</p>
+                <p class="card-textP">Address:</p>
+             
+                <input class="btn btn-primary" type="Edit" value="Edit Profile">
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+
+</body>
+
+<script type="text/javascript">
+
+    function toggleMenu() {
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+
+
+</script>
+
+
+
+</html>
