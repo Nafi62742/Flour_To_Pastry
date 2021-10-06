@@ -365,7 +365,7 @@ header .navigation{
     }
 
     .circle
-{
+{   display: none;
     position: absolute;
     bottom: 0rem;
     width: 100%;
